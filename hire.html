@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hire Me</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:"Tinos",serif;
+  background:linear-gradient(135deg,#0f172a,#1e293b);
+  padding:20px;
+}
+
+ .title,.card{
+ opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards;
+}
+@keyframes fadeUp{
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.wrapper{
+  width:100%;
+  max-width:560px;
+}
+
+.title{
+  text-align:center;
+  font-size:1.8rem;
+  color:#E5E7EB;
+  margin-bottom:25px;
+  letter-spacing:1px;
+}
+
+.card{
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:14px;
+  padding:28px;
+  box-shadow:0 20px 45px rgba(0,0,0,0.25);
+}
+
+.section{
+  margin-bottom:26px;
+}
+
+.section h4{
+  font-size:1.2rem;
+  font-weight:700;
+  background:linear-gradient(90deg,#ffffff,#bfdbfe);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  margin-bottom:6px;
+}
+
+.line{
+  width:60px;
+  height:2px;
+  background:rgba(255,255,255,0.5);
+  margin-bottom:12px;
+}
+
+.text{
+  font-size:0.95rem;
+  line-height:1.7;
+  
+}
+.text,
+ul li,
+.social{
+  color:#e5e7eb;
+}
+
+ul{
+  padding-left:18px;
+}
+
+ul li{
+  margin-bottom:6px;
+  font-size:0.95rem;
+}
+
+.social{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:12px;
+  font-size:0.95rem;
+  text-decoration:none;
+}
+
+.social i{
+  width:34px;
+  height:34px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:rgba(255,255,255,0.15);
+}
+
+.back-btn{
+  display:inline-block;
+  margin-top:18px;
+  padding:8px 16px;
+  border-radius:6px;
+  background:rgba(255,255,255,0.12);
+  border:1px solid rgba(255,255,255,0.3);
+  color:#fff;
+  text-decoration:none;
+}
+
+@media (min-width:1024px){
+  .title{
+    font-size:2rem;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+
+<h2 class="title">More Information</h2>
+
+<div class="card">
+
+  <div class="section">
+    <h4>Why You Should Hire Me</h4>
+    <div class="line"></div>
+    <p class="text">
+      I am a self-taught Frontend Developer who is consistent, disciplined,
+      and focused on improvement. I take feedback seriously and improve every day.
+    </p>
+  </div>
+
+  <div class="section">
+    <h4>What I Can Do</h4>
+    <div class="line"></div>
+    <ul>
+      <li>HTML & CSS responsive websites</li>
+      <li>Clean and structured code</li>
+      <li>Modern UI layouts</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h4>Contact</h4>
+    <div class="line"></div>
+
+    <a class="social" href="#">
+      <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+    </a>
+
+    <a class="social" href="https://www.instagram.com/sabir.7q">
+      <i class="fa-brands fa-instagram"></i> sabir.7q
+    </a>
+
+    <a class="social" href="https://www.reddit.com/u/sabir_7q">
+      <i class="fa-brands fa-reddit-alien"></i> u/sabir_7q
+    </a>
+
+    <a class="social" href="https://www.threads.net/@sabir.7q">
+      <i class="fa-brands fa-threads"></i> sabir.7q
+    </a>
+
+    <a class="back-btn" href="Portfolio.html">Go Back</a>
+  </div>
+
+</div>
+</div>
+</body>
+</html>
